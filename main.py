@@ -30,7 +30,7 @@ class SmartDispatchAgent:
     def __init__(self):
         self.model = ChatOpenAI(
             base_url="https://api.deepseek.com",
-            api_key=""DEEPSEEK_API_KEY",
+            api_key=os.getenv"DEEPSEEK_API_KEY",
             model="deepseek-chat",
             temperature=0.5 # 适当提高温度以支持创意分析（如竞品分析）
         )
